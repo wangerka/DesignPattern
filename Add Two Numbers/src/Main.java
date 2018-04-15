@@ -7,7 +7,7 @@ public class Main {
 	 */
 	
 	public static void main(String[] args) {
-		int[] a={2,5,3,4};
+		int[] a={2,4,3};
 		int[] b ={5,6,4};
 		System.out.println(buildListNode1(a).toString());
 		System.out.println(buildListNode1(b).toString());
@@ -129,7 +129,7 @@ public class Main {
 			total = num1+num2+carry;
 			newNode = new ListNode(total%10);
 			newNode.next=null;
-			if(total>10){
+			if(total>=10){
 				carry=1;
 			} else {
 				carry =0;
